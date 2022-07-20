@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      color: #FFFFFF;
+      font-size: 11px;
+      text-align: center;
+      margin-top: 2rem
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="card card--profile">
+      <div class="flex card--header">
+        <img src="./images/image-jeremy.png" alt="profile image">
+        <div class="flex column my-auto">
+          <p class="title">Report for</p>
+          <p class="name">Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="flex btn--container">
+        <span class="btn" data-option="daily">Daily</span>
+        <span class="btn btn--active" data-option="weekly">Weekly</span>
+        <span class="btn" data-option="monthly">Monthly</span>
+      </div>
+    </section>
+
+    <section class="card card--work">
+      <div class="card--background">
+        <img src="./images/icon-work.svg" alt="icon work">
+      </div>
+      <div data-title="work" class="card--body">
+        <div class="flex center">
+          <h1 class="card--title">Work</h1>
+          <img src="./images/icon-ellipsis.svg" alt="icon ellipsis" class="ellipsis" />
+        </div>
+        <div class="flex card--information">
+        </div>
+      </div>
+    </section>
+
+    <section class="card card--play">
+      <div class="card--background">
+        <img src="./images/icon-play.svg" alt="icon play">
+      </div>
+      <div data-title="play" class="card--body">
+        <div class="flex center">
+          <h1 class="card--title">Play</h1>
+          <img src="./images/icon-ellipsis.svg" alt="icon ellipsis" class="ellipsis" />
+        </div>
+        <div class="flex card--information">
+        </div>
+      </div>
+    </section>
+
+    <section class="card card--study">
+      <div class="card--background">
+        <img src="./images/icon-study.svg" alt="icon study">
+      </div>
+      <div data-title="study" class="card--body">
+        <div class="flex center">
+          <h1 class="card--title">
+            Study
+          </h1>
+          <img src="./images/icon-ellipsis.svg" alt="icon ellipsis" class="ellipsis" />
+        </div>
+        <div class="flex card--information">
+        </div>
+      </div>
+    </section>
+
+    <section class="card card--exercise">
+      <div class="card--background">
+        <img src="./images/icon-exercise.svg" alt="icon exercise">
+      </div>
+      <div data-title="exercise" class="card--body">
+        <div class="flex center">
+          <h1 class="card--title">
+            Exercise
+          </h1>
+          <img src="./images/icon-ellipsis.svg" alt="icon ellipsis" class="ellipsis" />
+        </div>
+        <div class="flex card--information">
+        </div>
+      </div>
+    </section>
+
+    <section class="card card--social">
+      <div class="card--background">
+        <img src="./images/icon-social.svg" alt="icon social">
+      </div>
+      <div data-title="social" class="card--body">
+        <div class="flex center">
+          <h1 class="card--title">
+            Social
+          </h1>
+          <img src="./images/icon-ellipsis.svg" alt="icon ellipsis" class="ellipsis" />
+        </div>
+        <div class="flex card--information">
+        </div>
+      </div>
+    </section>
+
+    <section class="card card--self-care">
+      <div class="card--background">
+        <img src="./images/icon-self-care.svg" alt="icon self care">
+      </div>
+      <div data-title="self care" class="card--body">
+        <div class="flex center">
+          <h1 class="card--title">
+            Self Care
+          </h1>
+          <img src="./images/icon-ellipsis.svg" alt="icon ellipsis" class="ellipsis" />
+        </div>
+        <div class="flex card--information">
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+:root {
+  --cls-blue: hsl(246, 80%, 60%);
+
+  /* Cards Colors */
+  --cls-work: hsl(15, 100%, 70%);
+  --cls-play: hsl(195, 75%, 62%);
+  --cls-study: hsl(348, 100%, 68%);
+  --cls-exercise: hsl(145, 58%, 55%);
+  --cls-social: hsl(264, 64%, 52%);
+  --cls-self-care: hsl(43, 84%, 65%);
+
+  /* Neutrol Colors */
+  --cls-very-dark-blue: hsl(226, 43%, 10%);
+  --cls-dark-blue: hsl(235, 46%, 20%);
+  --cls-desaturated-blue: hsl(235, 45%, 61%);
+  --cls-pale-blue: hsl(236, 100%, 87%);
+
+  --fs-title: 1.125rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  /* line-height: 1.5; */
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--cls-very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  place-content: center;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main {
+  display: grid;
+  gap: 1.25rem;
+  width: min(95%, 60rem);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ellipsis {
+  width: min-content;
+  height: min-content;
+  cursor: pointer;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.btn--container {
+  justify-content: space-around;
+  padding-block: 1rem;
+}
+
+.btn {
+  color: var(--cls-pale-blue);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--cls-desaturated-blue);
+}
+
+.btn--active {
+  color: #FFFFFF;
+}
+
+.card {
+  color: #FFFFFF;
+  border-radius: 0.813rem;
+  border-bottom-left-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  background-color: var(--cls-dark-blue);
+  position: relative;
+  cursor: pointer;
+}
+
+.card--profile {
+  cursor: inherit;
+}
+
+.card--header {
+  background-color: var(--cls-blue);
+  border-radius: 0.813rem;
+  padding: 1.75rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card--header img {
+  width: 3.75rem;
+  height: 3.75rem;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 0.813rem;
+  color: var(--cls-pale-blue);
+  font-weight: 300;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.card--background {
+  position: relative;
+  border-top-left-radius: 0.813rem;
+  border-top-right-radius: 0.813rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 1.25rem;
+}
+
+.card--background img {
+  position: absolute;
+  top: 0;
+  right: 1.2rem;
+  width: 79px;
+  /* height: 79px; */
+}
+
+.card--body {
+  background-color: var(--cls-dark-blue);
+  padding: 1.75rem 1.75rem 1rem;
+  border-radius: 0.813rem;
+  /* border-top-right-radius: 0.813rem; */
+}
+
+.card--body:hover {
+  background-color: var(--cls-desaturated-blue);
+  /* background-color: hsl(235, 46%, 35%); */
+}
+
+.card--information {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card--work,
+.card--work>.card--background {
+  background-color: var(--cls-work);
+}
+
+.card--play,
+.card--play>.card--background {
+  background-color: var(--cls-play);
+}
+
+.card--study,
+.card--study>.card--background {
+  background-color: var(--cls-study);
+}
+
+.card--exercise,
+.card--exercise>.card--background {
+  background-color: var(--cls-exercise);
+}
+
+.card--social,
+.card--social>.card--background {
+  background-color: var(--cls-social);
+}
+
+.card--self-care,
+.card--self-care>.card--background {
+  background-color: var(--cls-self-care);
+}
+
+.card--title {
+  font-size: var(--fs-title);
+}
+
+.actual-time {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.previous-time {
+  font-size: .65rem;
+  color: var(--cls-pale-blue);
+  font-weight: 300;
+}
+
+
+@media screen and (min-width: 33em) {}
+
+@media screen and (min-width: 40em) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card--profile {
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card--profile {
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    /* display: grid; */
+  }
+}
+
+@media screen and (min-width: 54em) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .my-auto {
+    margin-block: auto;
+  }
+
+  .card--profile {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+  }
+
+  .card--header {
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-bottom: 5rem; */
+  }
+
+  .name {
+    font-size: 2.25rem;
+    font-weight: 300;
+  }
+
+  .btn--container {
+    flex-direction: column;
+    padding-inline: 1.75rem;
+    justify-content: space-between;
+    /* padding-block: .25rem; */
+  }
+
+  .btn {
+    width: fit-content;
+    /* padding: 0.3rem; */
+  }
+
+  .card--information {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .actual-time {
+    font-size: 2.55rem;
+    font-weight: 300;
+  }
+
+  .previous-time {
+    margin-top: .75rem;
+  }
+}
+
+@media screen and (min-width: 75em) {}
