@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github repository](https://github.com/RafisElias/time-tracking-dashboard)
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [https://strong-sprinkles-e5ba21.netlify.app/](https://strong-sprinkles-e5ba21.netlify.app/)
 
 ## My process
 
